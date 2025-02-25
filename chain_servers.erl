@@ -1,6 +1,8 @@
 -module(chain_servers).
 -export([start/0, serv1/1, serv2/1, serv3/1]).
 
+%Team: Madison Roberts and Ashley Price
+
 serv1(Next) -> receive
     {add, X, Y} ->
         io:format("(serv1) ~p + ~p = ~p~n", [X, Y, X + Y]),
